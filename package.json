@@ -6,6 +6,9 @@
   "scripts": {
     "test": "elsint src/**/*.js"
   },
+  "bin": {
+    "rvl": "bin/index.js"
+  },
   "keywords": [
     "reveal",
     "revealjs",
@@ -23,5 +26,9 @@
     "js-yaml": "^3.13.1",
     "livereload": "^0.8.0",
     "marked": "^0.7.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-terser": "^1.2.0"
   }
 }
