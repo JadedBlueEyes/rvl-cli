@@ -1,5 +1,6 @@
 ---
 title: Hi
+theme: white
 ---
 
 # Presentation
