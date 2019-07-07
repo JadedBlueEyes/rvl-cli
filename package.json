@@ -30,5 +30,13 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-terser": "^1.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoelEllis/rvl-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JoelEllis/rvl-cli/issues"
+  },
+  "homepage": "https://github.com/JoelEllis/rvl-cli#readme"
 }
