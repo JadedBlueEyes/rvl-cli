@@ -1,5 +1,7 @@
 # rvl-cli
 
+[![npm](https://img.shields.io/npm/v/rvl-cli.svg)](https://www.npmjs.com/package/rvl-cli) ![licence](https://img.shields.io/npm/l/rvl-cli.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/JoelEllis/rvl-cli.svg)
+
 > A cli for quickly creating Reveal.js slideshows using MarkDown.
 
 ## Install
