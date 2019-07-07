@@ -21,6 +21,7 @@
     "fancy-log-levels": "^1.0.0",
     "html-minifier": "^4.0.0",
     "js-yaml": "^3.13.1",
+    "livereload": "^0.8.0",
     "marked": "^0.7.0"
   }
 }
