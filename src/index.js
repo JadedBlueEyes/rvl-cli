@@ -1,9 +1,11 @@
+#!/usr/bin/env node
+
 var program = require('commander');
 program
   .version('0.1.0')
   .usage('[options] <file>')
   .option("-w, --watch", "Watch the files for changes.")
-  .option("-o, --out [file]", "Watch the files for changes.")
+  .option("-o, --out [file]", "Output file.")
   .option('-v, --verbose', 'What the program logs.\n'
     + '0 - error, 1 - warning, 2 - info, 3 - debug', function increaseVerbosity (v, total) {
       return total + 1;
