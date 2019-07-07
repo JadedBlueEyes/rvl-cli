@@ -32,5 +32,5 @@ let opts = {
   out
 }
 log.info("Starting generation...")
-require("./rvl")(file, opts, log)
+require("./rvl")(file, opts, log, !watch)
 log.info("Done generation!")

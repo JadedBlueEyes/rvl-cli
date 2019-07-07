@@ -14,8 +14,9 @@ var version = require('../package.json').version;
  * @param {Object} options settings object
  *     listed in the cleaver document
  * @param {any} log Logger.
+ * @param {boolean} m weather to minify.
  */
-function rvl (file, opts, log) {
+function rvl (file, opts, log, m) {
   let filePath = file.toString();
   let options = opts || {};
   log.debug(filePath)
@@ -39,6 +40,25 @@ function rvl (file, opts, log) {
 
   let document = genDoc(slides, docOpts)
   log.debug(document)
+    if (m) document = require('html-minifier').minify(document, {
+    collapseWhitespace: true,
+    caseSensitive: false,
+    collapseBooleanAttributes: true,
+    processConditionalComments: true,
+    quoteCharacter: "\"",
+    removeScriptTypeAttributes: true,
+    removeStyleLinkTypeAttributes: true,
+    sortAttributes: true,
+    sortClassName: true,
+    useShortDoctype: true,
+    minifyCSS: true,
+    minifyJS: true,
+    removeComments: true,
+    decodeEntities: true,
+    html5: true,
+    removeAttributeQuotes: true,
+    removeRedundantAttributes: true
+  });
   fs.writeFileSync(options.out, document)
 }
 
