@@ -1,6 +1,6 @@
 ---
 title: Hi
-theme: white
+theme: blood
 ---
 
 # Presentation
